@@ -14,6 +14,8 @@ public class ButtonStart : MonoBehaviour
         // reset the score
         PlayerPrefs.DeleteKey("score");
 
+        // reset the lives
+        PlayerPrefs.DeleteKey("lives");
 
         // load the first level
         SceneManager.LoadScene("Level1");
